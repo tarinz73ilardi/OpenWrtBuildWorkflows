@@ -17,3 +17,4 @@
 #EOF
 #git apply example.patch
 rm -rf build_dir/hostpkg/ruby-3.3.4
+git clone https://github.com/ruby/ruby.git -b v3_3_5 build_dir/hostpkg/ruby-3.3.4
