@@ -17,5 +17,3 @@
 #EOF
 #git apply example.patch
 rm -rf build_dir/hostpkg/ruby-3.3.4
-wget https://cache.ruby-lang.org/pub/ruby/3.3/ruby-3.3.5.tar.gz
-tar -zxvf ruby-3.3.5.tar.gz openwrt/build_dir/hostpkg/ruby-3.3.5
