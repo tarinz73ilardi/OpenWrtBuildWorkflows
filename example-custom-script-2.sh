@@ -16,5 +16,10 @@
 #patch content
 #EOF
 #git apply example.patch
-rm -rf build_dir/hostpkg/ruby-3.3.4
-git clone https://github.com/ruby/ruby.git -b v3_3_5 build_dir/hostpkg/ruby-3.3.4
+rm -rf staging_dir/hostpkg/lib/ruby
+rm -rf staging_dir/hostpkg/include/ruby-*
+rm staging_dir/hostpkg/lib/pkgconfig/ruby-*
+rm staging_dir/hostpkg/bin/ruby
+rm -rf build_dir/hostpkg/ruby-*
+make package/feeds/packages/ruby/host/compile V=s
+make package/feeds/packages/ruby/compile V=s
